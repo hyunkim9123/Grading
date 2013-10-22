@@ -1,0 +1,10 @@
+#ifndef "Examinee.h"
+#define
+
+class Examinee
+{
+public:
+	Examinee();
+	~Examinee();
+};
+#endif

@@ -1,12 +1,14 @@
 //main driver file of grading system project
 
+#include <iostream>
+#include "InputReader.h"
+#include "Validator.h"
+#include "Grader.h"
+#include "OutputWriter.h"
 
-#include <ifstream>
-
-int main(void)
+int main(int argc, char* argv[])
 {
 	Examinee ePerson;
-	Grader gPerson;
 
 	
 	return 0;
