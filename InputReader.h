@@ -1,18 +1,16 @@
 #ifndef INPUTREADER_H
 #define INPUTREADER_H
-#include <iostream>
-
-using namespace std;
-class Examinee
+#include "Common.h"
+class InputReader
 {
 public:
-	Examinee()
-	{
-		cout << "created" << endl;
-	}
-	~Examinee()
-	{
-		cout << "Destroyed" << endl;
-	}
+	InputReader();
+	~InputReader();
+	void scanSubmissionMethod(const int argc);
+	void scanInput();
+	string *getInput();
+private:
+	SUB_TYPE subtype;
+	string *answer;
 };
 #endif

@@ -1,9 +1,13 @@
-#ifndef OUTPUTWRITER_H
-#define OUTPUTWRITER_H
-class OutputWriter{
-public:
-	OutputWriter();
-	~OutputWriter();
-	
-};
-#endif
+#include "OutputWriter.h"
+
+OutputWriter::OutputWriter()
+{
+
+}
+OutputWriter::~OutputWriter()
+{
+}
+void OutputWriter::displayResult(const float score)
+{
+	cout << "Your score is " << score << endl;
+}	

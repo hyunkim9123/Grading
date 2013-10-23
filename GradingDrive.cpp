@@ -8,7 +8,17 @@
 
 int main(int argc, char* argv[])
 {
-	Examinee ePerson;
+	InputReader iReader;
+	Validator validator;
+	Grader grader;
+//	OutputWriter oWriter;
+	
+	iReader.scanSubmissionMethod(argc);
+	iReader.scanInput();
+//	validator.validateInput(iReader.getInput());
+//	grader.grade(iReader.getInput());
+//	oWriter.displayResult(grader.getGrade());
+	
 
 	
 	return 0;
