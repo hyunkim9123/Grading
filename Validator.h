@@ -4,8 +4,11 @@
 using namespace std;
 class Validator{
 public:
+	//default constructor
 	Validator();
+	//default destructor
 	~Validator();
+	//validate the input
 	bool validateInput(const string *answer);
 private:
 };

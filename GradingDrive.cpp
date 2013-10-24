@@ -11,13 +11,13 @@ int main(int argc, char* argv[])
 	InputReader iReader;
 	Validator validator;
 	Grader grader;
-//	OutputWriter oWriter;
+	OutputWriter oWriter;
 	
 	iReader.scanSubmissionMethod(argc);
 	iReader.scanInput();
-//	validator.validateInput(iReader.getInput());
-//	grader.grade(iReader.getInput());
-//	oWriter.displayResult(grader.getGrade());
+	validator.validateInput(iReader.getInput());
+	grader.grade(iReader.getInput());
+	oWriter.displayResult(grader.getGrade());
 	
 
 	

@@ -1,13 +1,16 @@
 #include <iostream>
 #include "InputReader.h"
+//allocate the answer string
 InputReader::InputReader()
 {
 	answer = new string[NUMINPUT];
 }
+//de-allocate the answer string
 InputReader::~InputReader()
 {
 	delete[] answer;
 }
+//decide scan method
 void InputReader::scanSubmissionMethod(const int argc)
 {
 	if(argc == 1)
@@ -19,10 +22,12 @@ void InputReader::scanSubmissionMethod(const int argc)
 		subtype = COM_LINE;
 	}
 }
+//return the answer in the instance
 string* InputReader::getInput()
 {
 	return answer;
 }
+//scan the input from the user
 void InputReader::scanInput()
 {
 	if(subtype == PROMPT){
@@ -32,10 +37,6 @@ void InputReader::scanInput()
 			cin >> answer[i];
 			cin.clear();
 		}
-/*		for(int i =0 ; i < 20; i++)
-		{
-			cout << "Entered answer : " << answer[i] << endl;
-		}	*/
 	}
 }
 

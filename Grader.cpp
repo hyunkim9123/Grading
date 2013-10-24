@@ -1,5 +1,5 @@
 #include "Grader.h"
-#
+//set the right answers in the system
 Grader::Grader()
 {
 	setRightAnswers();
@@ -8,10 +8,12 @@ Grader::~Grader()
 {
 
 }
+//get grade
 float Grader::getGrade()
 {
 	return score;
 }
+//do grading
 bool Grader::grade(const string *answer)
 {
 	int cnt = 0;
@@ -24,6 +26,7 @@ bool Grader::grade(const string *answer)
 	}	
 	score = (float) cnt / 20 * 100;
 }
+//set the right answers in the system
 void Grader::setRightAnswers()
 {
 	rgtAnswers = new string[NUMINPUT];
